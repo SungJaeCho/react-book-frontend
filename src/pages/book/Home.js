@@ -1,9 +1,12 @@
 import React from 'react';
+import BookItem from '../../components/BookItem';
 
 const Home = () => {
-  return <div>
-      <h1>책 리스트 보기</h1>
-  </div>;
+  return (
+    <div>
+      <BookItem />
+    </div>
+  );
 };
 
 export default Home;
