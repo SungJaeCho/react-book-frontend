@@ -2,12 +2,14 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const BookItem = () => {
+const BookItem = (props) => {
+  const { id, title, author } = props.book;
+
   return (
     <Card>
       <Card.Body>
-        <Card.Title>제목</Card.Title>
-        <Link to={'/post/1'} className="btn btn-primary">
+        <Card.Title>{title}</Card.Title>
+        <Link to={'/post/' + id} className="btn btn-primary">
           상세보기
         </Link>
       </Card.Body>
